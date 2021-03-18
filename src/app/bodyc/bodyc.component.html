@@ -1,0 +1,21 @@
+<mat-card>
+  <h2>Cadastre um novo livro</h2>
+  <mat-form-field>
+    <mat-label for="">N° De Identificação :</mat-label>
+    <input type="text" matInput [(ngModel)]="id">
+   </mat-form-field>
+    <mat-form-field>
+    <mat-label for="">Titulo :</mat-label>
+    <input type="text" matInput [(ngModel)]="titulo">
+   </mat-form-field>
+    <mat-form-field>
+    <mat-label for="">Autor :</mat-label>
+    <input type="text" matInput [(ngModel)]="autor">
+    </mat-form-field>
+    <mat-form-field>
+    <mat-label for="">N° De Paginas :</mat-label>
+    <input type="text" matInput [(ngModel)]="npaginas">
+    </mat-form-field>
+
+  <button (click)="OnLivroAdd()" color = 'primary' mat-raised-button> Cadastrar  livro</button>
+</mat-card>
